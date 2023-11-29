@@ -14,6 +14,7 @@ enum Locale {
   en
 }
 
+// ! AFTER ADDING MORE SETTING MAKE SURE TO EDIT src/typings/index.ts
 model Guild {
   id      String @id @default(auto()) @map("_id") @db.ObjectId
   guildId String @unique
