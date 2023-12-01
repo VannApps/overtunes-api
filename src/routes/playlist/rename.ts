@@ -25,9 +25,9 @@ export async function rename(request: FastifyRequest, reply: FastifyReply) {
         }
     })
 
-    if (!oldPlaylist) return reply.badGateway(`There is no playlist named ${body.old_name}`)
+    if (!oldPlaylist) return reply.badGateway(`There is no playlist named **${body.old_name}**`)
 
-    if (newPlaylist) return reply.badGateway(`There is already playlist named ${body.new_name}`)
+    if (newPlaylist) return reply.badGateway(`There is already playlist named **${body.new_name}**`)
 
     return prisma.playlist.update({
         where: {

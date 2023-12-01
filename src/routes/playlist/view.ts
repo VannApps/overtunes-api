@@ -14,12 +14,12 @@ export async function view(request: FastifyRequest, reply: FastifyReply) {
                 userId: params.id
             }
         },
-        select: {
+        include: {
             songs: true
         }
     })
 
     if (!data) return reply.notFound("Playlist not found");
 
-    return reply.send({ data: data.songs });
+    return reply.send({ data: data, });
 }
