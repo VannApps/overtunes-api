@@ -3,6 +3,7 @@ import AutoLoad, { AutoloadPluginOptions } from '@fastify/autoload';
 import { FastifyPluginAsync } from 'fastify';
 import { fileURLToPath } from 'url'
 import cors from '@fastify/cors'
+import Middie from '@fastify/middie'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -24,6 +25,21 @@ const app: FastifyPluginAsync<AppOptions> = async (
   await fastify.register(cors, {
     origin: "*"
   })
+
+  void fastify.register(Middie.default, {
+    prefix: "/guild/*",
+    hook: "onRequest"
+  }).register(middleWareSystem)
+
+  async function middleWareSystem() {
+    fastify.addHook('onRequest', async (request, reply) => {
+      const token = request.headers.authorization;
+
+      if (!token) return reply.unauthorized();
+      if (token !== process.env.AUTH) return reply.unauthorized();
+    })
+  }
+
   // Do not touch the following lines
 
   // This loads all plugins defined in plugins
