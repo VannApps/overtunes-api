@@ -24,8 +24,8 @@ dependencies:
     specifier: ^4.0.0
     version: 4.26.2
   fastify-cli:
-    specifier: ^5.9.0
-    version: 5.9.0
+    specifier: ^6.0.0
+    version: 6.1.1
   fastify-plugin:
     specifier: ^4.0.0
     version: 4.5.1
@@ -1108,21 +1108,6 @@ packages:
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: true
 
-  /chokidar@3.5.3:
-    resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
-    engines: {node: '>= 8.10.0'}
-    dependencies:
-      anymatch: 3.1.3
-      braces: 3.0.2
-      glob-parent: 5.1.2
-      is-binary-path: 2.1.0
-      is-glob: 4.0.3
-      normalize-path: 3.0.0
-      readdirp: 3.6.0
-    optionalDependencies:
-      fsevents: 2.3.3
-    dev: false
-
   /chokidar@3.6.0:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
@@ -1136,7 +1121,6 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.3
-    dev: true
 
   /chownr@2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
@@ -1410,13 +1394,13 @@ packages:
     resolution: {integrity: sha512-eel5UKGn369gGEWOqBShmFJWfq/xSJvsgDzgLYC845GneayWvXBf0lJCBn5qTABfewy1ZDPoaR5OZCP+kssfuw==}
     dev: false
 
-  /fastify-cli@5.9.0:
-    resolution: {integrity: sha512-CaIte5SwkLuvlzpdd1Al1VRVVwm2TQVV4bfVP4oz/Z54KVSo6pqNTgnxWOmyzdcNUbFnhJ3Z4vRjzvHoymP5cQ==}
+  /fastify-cli@6.1.1:
+    resolution: {integrity: sha512-3TinVuHxcEOhwjRLoE9rTeH1IXa73B5fS21amNyTgF2kOnC72sHzp1p6y2RsbPES1NGf2A7+4S11jbfdTOchVQ==}
     hasBin: true
     dependencies:
       '@fastify/deepmerge': 1.3.0
       chalk: 4.1.2
-      chokidar: 3.5.3
+      chokidar: 3.6.0
       close-with-grace: 1.2.0
       commist: 3.2.0
       dotenv: 16.3.1
@@ -1429,7 +1413,7 @@ packages:
       pino-pretty: 10.2.3
       pkg-up: 3.1.0
       resolve-from: 5.0.0
-      semver: 7.5.4
+      semver: 7.6.0
       yargs-parser: 21.1.1
     transitivePeerDependencies:
       - supports-color
@@ -2429,9 +2413,9 @@ packages:
       on-exit-leak-free: 2.1.2
       pino-abstract-transport: 1.1.0
       pump: 3.0.0
-      readable-stream: 4.4.2
+      readable-stream: 4.5.2
       secure-json-parse: 2.7.0
-      sonic-boom: 3.7.0
+      sonic-boom: 3.8.1
       strip-json-comments: 3.1.1
     dev: false
 
@@ -2634,17 +2618,6 @@ packages:
       util-deprecate: 1.0.2
     dev: false
 
-  /readable-stream@4.4.2:
-    resolution: {integrity: sha512-Lk/fICSyIhodxy1IDK2HazkeGjSmezAWX2egdtJnYhtzKEsBPJowlI6F6LPb5tqIQILrMbx22S5o3GuJavPusA==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dependencies:
-      abort-controller: 3.0.0
-      buffer: 6.0.3
-      events: 3.3.0
-      process: 0.11.10
-      string_decoder: 1.3.0
-    dev: false
-
   /readable-stream@4.5.2:
     resolution: {integrity: sha512-yjavECdqeZ3GLXNgRXgeQEdz9fvDDkNKyHnbHRFtOr7/LcfgBcmct7t/ET+HaCTqfh06OzoAxrkN/IfjJBVe+g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -2773,14 +2746,6 @@ packages:
     resolution: {integrity: sha512-6aU+Rwsezw7VR8/nyvKTx8QpWH9FrcYiXXlqC4z5d5XQBDRqtbfsRjnwGyqbi3gddNtWHuEk9OANUotL26qKUw==}
     dev: false
 
-  /semver@7.5.4:
-    resolution: {integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      lru-cache: 6.0.0
-    dev: false
-
   /semver@7.6.0:
     resolution: {integrity: sha512-EnwXhrlwXMk9gKu5/flx5sv/an57AkRplG3hTK68W7FRDN+k+OWBj65M7719OkA82XLBxrcX0KSHj+X5COhOVg==}
     engines: {node: '>=10'}
@@ -2874,12 +2839,6 @@ packages:
       ip-address: 9.0.5
       smart-buffer: 4.2.0
     dev: true
-
-  /sonic-boom@3.7.0:
-    resolution: {integrity: sha512-IudtNvSqA/ObjN97tfgNmOKyDOs4dNcg4cUUsHDebqsgb8wGBBwb31LIgShNO8fye0dFI52X1+tFoKKI6Rq1Gg==}
-    dependencies:
-      atomic-sleep: 1.0.0
-    dev: false
 
   /sonic-boom@3.8.1:
     resolution: {integrity: sha512-y4Z8LCDBuum+PBP3lSV7RHrXscqksve/bi0as7mhwVnBW+/wUqKT/2Kb7um8yqcFy0duYbbPxzt89Zy2nOCaxg==}
