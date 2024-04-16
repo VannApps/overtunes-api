@@ -25,6 +25,8 @@ model Guild {
 
   volume   Int    @default(75)
   language Locale @default(en)
+
+  premium Boolean @default(false)
 }
 
 model User {
