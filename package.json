@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "start": "fastify start -l info dist/app.js",
+    "start": "export NODE_ENV=production && fastify start -l info dist/app.js",
     "build": "prisma generate && tsc",
     "watch": "tsc -w",
     "dev": "npm run build && concurrently -k -p \"[{name}]\" -n \"TypeScript,App\" -c \"yellow.bold,cyan.bold\" \"npm:watch\" \"npm:dev:start\"",
@@ -22,10 +22,13 @@
     "@fastify/cors": "^9.0.0",
     "@fastify/middie": "^8.3.0",
     "@fastify/sensible": "^5.0.0",
-    "@prisma/client": "^5.6.0",
+    "@prisma/client": "^5.13.0",
+    "axios": "^1.6.8",
+    "cheerio": "1.0.0-rc.12",
     "fastify": "^4.0.0",
     "fastify-cli": "^6.0.0",
-    "fastify-plugin": "^4.0.0"
+    "fastify-plugin": "^4.0.0",
+    "tebex_headless": "^1.6.2"
   },
   "devDependencies": {
     "@types/node": "^20.4.4",
@@ -33,7 +36,7 @@
     "c8": "^9.0.0",
     "concurrently": "^8.2.2",
     "fastify-tsconfig": "^2.0.0",
-    "prisma": "^5.6.0",
+    "prisma": "^5.13.0",
     "tap": "^18.0.0",
     "ts-node": "^10.4.0",
     "typescript": "^5.2.2"
