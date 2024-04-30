@@ -3,7 +3,6 @@ import { FastifyPluginAsync } from "fastify"
 import { get } from "./get.js";
 import { post } from "./post.js";
 import { put } from "./put.js";
-import { editable } from "./editable.js";
 import { info } from "./info.js";
 
 const route: FastifyPluginAsync = async (fastify, opts): Promise<void> => {
@@ -11,7 +10,6 @@ const route: FastifyPluginAsync = async (fastify, opts): Promise<void> => {
     fastify.post('/:id', post)
     fastify.put('/:id', put)
 
-    fastify.get('/editable/:id', editable)
 
     fastify.get('/info/:id', info)
 }

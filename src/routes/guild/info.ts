@@ -9,6 +9,10 @@ export async function info(request: FastifyRequest, reply: FastifyReply) {
         }
     })
 
+    if (!response.ok) {
+        return reply.status(404).send({ message: 'Guild not found' });
+    }
+
     const data = await response.json()
 
     return reply.send({ data: data });

@@ -4,6 +4,7 @@ import { FastifyPluginAsync } from 'fastify';
 import { fileURLToPath } from 'url'
 import cors from '@fastify/cors'
 import Middie from '@fastify/middie'
+import { bypassMiddleware } from './constant/bypassMiddleware.js';
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -33,10 +34,12 @@ const app: FastifyPluginAsync<AppOptions> = async (
 
   async function middleWareSystem() {
     fastify.addHook('onRequest', async (request, reply) => {
-      const token = request.headers.authorization;
+      if (!bypassMiddleware.some((route) => request.url.includes(route))) {
+        const token = request.headers.authorization;
 
-      if (!token) return reply.unauthorized();
-      if (token !== process.env.AUTH) return reply.unauthorized();
+        if (!token) return reply.unauthorized();
+        if (token !== process.env.AUTH) return reply.unauthorized();
+      }
     })
   }
 
@@ -58,7 +61,6 @@ const app: FastifyPluginAsync<AppOptions> = async (
     options: opts,
     forceESM: true
   })
-
 };
 
 export default app;

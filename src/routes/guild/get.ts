@@ -9,9 +9,12 @@ export async function get(request: FastifyRequest, reply: FastifyReply) {
             guildId: params.id
         },
         create: {
-            guildId: params.id
+            guildId: params.id,
         },
-        update: {}
+        update: {},
+        include: {
+            subscription: true
+        }
     })
 
     return reply.send({ data: guilds });
