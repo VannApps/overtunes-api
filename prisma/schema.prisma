@@ -14,6 +14,13 @@ enum Locale {
   en
 }
 
+enum Tier {
+  FREE
+  SILVER
+  GOLD
+  DIAMOND
+}
+
 // ! AFTER ADDING MORE SETTING MAKE SURE TO EDIT src/typings/index.ts
 model Guild {
   id      String @id @default(auto()) @map("_id") @db.ObjectId
@@ -26,7 +33,8 @@ model Guild {
   volume   Int    @default(75)
   language Locale @default(en)
 
-  premium Boolean @default(false)
+  subscription   Subscription? @relation(fields: [subscriptionId], references: [id])
+  subscriptionId String?       @db.ObjectId
 }
 
 model User {
@@ -53,6 +61,18 @@ model Song {
 
   track String?
   info  SongInfo
+}
+
+model Subscription {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+
+  userId String @unique
+
+  premiumCount Int      @default(0)
+  premiumTier  Tier     @default(FREE)
+  purchasedAt  DateTime
+
+  premiumGuild Guild[]
 }
 
 type SongInfo {
