@@ -11,7 +11,7 @@ RUN pnpm install --frozen-lockfile
 
 COPY . .
 
-RUN pnpm run build:ts
+RUN pnpm run build
 
 RUN pnpm prune --production
 
