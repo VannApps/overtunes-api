@@ -26,27 +26,33 @@ export async function recurringEnd(request: FastifyRequest, reply: FastifyReply)
         });
     }
 
-    await prisma.subscription.update({
-        where: {
-            userId: body.subject.initial_payment.customer.username.id
-        },
-        data: {
-            premiumGuild: {
-                set: []
+    try {
+        await prisma.subscription.update({
+            where: {
+                userId: body.subject.initial_payment.customer.username.id
+            },
+            data: {
+                premiumGuild: {
+                    set: []
+                }
             }
-        }
-    })
-
-    await prisma.subscription.delete({
-        where: {
-            userId: body.subject.initial_payment.customer.username.id
-        },
-        include: {
-            premiumGuild: true,
-        }
-    })
-
-    return reply.send({
-        "id": body.id
-    });
+        })
+    
+        await prisma.subscription.delete({
+            where: {
+                userId: body.subject.initial_payment.customer.username.id
+            },
+            include: {
+                premiumGuild: true,
+            }
+        })
+    
+        return reply.send({
+            "id": body.id
+        });
+    } catch {
+        return reply.send({
+            "error": "Subscription not found"
+        })
+    }
 }
