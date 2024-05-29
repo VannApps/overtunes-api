@@ -28,7 +28,7 @@ jobs:
           string: ${{ github.event_name == 'release' && 'latest' || github.ref_name }}
 
       - name: Log in to GitHub Container Registry
-        uses: docker/login-action@5f4866a30a54f16a52d2ecb4a3898e9e424939cf
+        uses: docker/login-action@0d4c9c5ea7693da7b068278f7b52bda2a190a446
         if: ${{ github.event_name != 'pull_request' }}
         with:
           registry: ghcr.io
