@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@fastify/autoload':
     specifier: ^5.0.0
-    version: 5.8.2
+    version: 5.8.3
   '@fastify/cors':
     specifier: ^9.0.0
     version: 9.0.1
@@ -108,8 +108,8 @@ packages:
       fast-uri: 2.3.0
     dev: false
 
-  /@fastify/autoload@5.8.2:
-    resolution: {integrity: sha512-AX555mbAvtYPWZhOJG73y8zV39wH+wEnOcgg13xfGoHJ46rdsfx0Rs8Yfi5exE4bBqdzcM72iIZdhTbLbEqScA==}
+  /@fastify/autoload@5.8.3:
+    resolution: {integrity: sha512-QR/bd/4EfGwWfk/3kmG8vj2iIXjoDt71AlYVujjJWYBjBh7oIFvxmT25jeVxkIK1ttmM3ycwsWwpg2MLObb54g==}
     dev: false
 
   /@fastify/cors@9.0.1:
