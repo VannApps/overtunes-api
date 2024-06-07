@@ -60,7 +60,7 @@ devDependencies:
     version: 5.15.0
   tap:
     specifier: ^19.0.0
-    version: 19.2.1(@types/node@20.14.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5)
+    version: 19.2.2(@types/node@20.14.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5)
   ts-node:
     specifier: ^10.4.0
     version: 10.9.2(@types/node@20.14.2)(typescript@5.4.5)
@@ -630,8 +630,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@tapjs/run@2.1.3(@tapjs/core@2.1.3)(@types/node@20.14.2)(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-27O2AmOXnBBeVDH7hQMv/3tT9o3OiRk9gDn/Gib9HH7DuPrsXe+YRfb1R6FUfq6/AHTVOE9uEoFk7f9fDb5uHA==}
+  /@tapjs/run@2.1.4(@tapjs/core@2.1.3)(@types/node@20.14.2)(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-Ba7HKqhYrEpQW3VzKAH4SXsL6CNPxvw+gBmKvC7dQZUkCa4qcsL7p6tsyUEltbNoxN+hr6MPhfS8bLBiJrH7ag==}
     engines: {node: 16 >=16.17.0 || 18 >= 18.6.0 || >=20}
     hasBin: true
     peerDependencies:
@@ -749,7 +749,7 @@ packages:
       rimraf: 5.0.7
       sync-content: 1.0.2
       tap-parser: 16.0.1
-      tshy: 1.14.0
+      tshy: 1.14.1
       typescript: 5.4.5
       walk-up-path: 3.0.1
     transitivePeerDependencies:
@@ -3096,8 +3096,8 @@ packages:
       yaml-types: 0.3.0(yaml@2.4.3)
     dev: true
 
-  /tap@19.2.1(@types/node@20.14.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5):
-    resolution: {integrity: sha512-PehUUGJ5chU1pKjrbKhG1IQVdiz2F2+0mifNQcNnLgOyfel36C8xKnBsiQaesrFUt6FZE1cmpmUcZM2z7Nb61w==}
+  /tap@19.2.2(@types/node@20.14.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5):
+    resolution: {integrity: sha512-JE8wUIALTg0D3c14rZwK96ZBWUEp0qEh99AGjA6wN+yLEoRUF63kga+W8yaU2ZNXtGwj2jIm3dH/0KV8uPeHJA==}
     engines: {node: 16 >=16.17.0 || 18 >= 18.6.0 || >=20}
     hasBin: true
     dependencies:
@@ -3113,7 +3113,7 @@ packages:
       '@tapjs/intercept': 2.0.5(@tapjs/core@2.1.3)
       '@tapjs/mock': 2.1.3(@tapjs/core@2.1.3)
       '@tapjs/node-serialize': 2.0.5(@tapjs/core@2.1.3)
-      '@tapjs/run': 2.1.3(@tapjs/core@2.1.3)(@types/node@20.14.2)(react-dom@18.3.1)(react@18.3.1)
+      '@tapjs/run': 2.1.4(@tapjs/core@2.1.3)(@types/node@20.14.2)(react-dom@18.3.1)(react@18.3.1)
       '@tapjs/snapshot': 2.0.5(@tapjs/core@2.1.3)(react-dom@18.3.1)(react@18.3.1)
       '@tapjs/spawn': 2.0.5(@tapjs/core@2.1.3)
       '@tapjs/stdin': 2.0.5(@tapjs/core@2.1.3)
@@ -3243,8 +3243,8 @@ packages:
       yn: 3.1.1
     dev: true
 
-  /tshy@1.14.0:
-    resolution: {integrity: sha512-YiUujgi4Jb+t2I48LwSRzHkBpniH9WjjktNozn+nlsGmVemKSjDNY7EwBRPvPCr5zAC/3ITAYWH9Z7kUinGSrw==}
+  /tshy@1.14.1:
+    resolution: {integrity: sha512-+mnKYTZhMRXLi+DZe/4k3X4bi6sG268J5zIBNJZnjjXwxp13VWIU5FQbX3QeDhNG9ASCGNkyr+3beJlIgGNd+Q==}
     engines: {node: 16 >=16.17 || 18 >=18.15.0 || >=20.6.1}
     hasBin: true
     dependencies:
