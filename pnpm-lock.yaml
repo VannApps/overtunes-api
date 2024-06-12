@@ -48,7 +48,7 @@ devDependencies:
     version: 15.0.11
   c8:
     specifier: ^10.0.0
-    version: 10.0.0
+    version: 10.1.1
   concurrently:
     specifier: ^8.2.2
     version: 8.2.2
@@ -1032,8 +1032,8 @@ packages:
       ieee754: 1.2.1
     dev: false
 
-  /c8@10.0.0:
-    resolution: {integrity: sha512-rdQecjxw16P8kwgMBjruaQyfF+R2o/mucCCK4VPktwq2HFMWLOHGyUasb46+WlUOVJX94d6dZolcJxzjCzWmXg==}
+  /c8@10.1.1:
+    resolution: {integrity: sha512-+aAvpNMwnzncW27XsEf2eMrGTF8HXIGZ24UQ1dW679+8SQ/UvDXxHNoKwMohcI9ZVj0xl/bI4/meqxvIWOBYaw==}
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
