@@ -37,7 +37,7 @@
     "concurrently": "^8.2.2",
     "fastify-tsconfig": "^2.0.0",
     "prisma": "^5.13.0",
-    "tap": "^19.0.0",
+    "tap": "^20.0.0",
     "ts-node": "^10.4.0",
     "typescript": "^5.2.2"
   },
