@@ -31,7 +31,7 @@ dependencies:
     version: 4.28.1
   fastify-cli:
     specifier: ^6.0.0
-    version: 6.2.1
+    version: 6.3.0
   fastify-plugin:
     specifier: ^4.0.0
     version: 4.5.1
@@ -119,8 +119,8 @@ packages:
       mnemonist: 0.39.6
     dev: false
 
-  /@fastify/deepmerge@1.3.0:
-    resolution: {integrity: sha512-J8TOSBq3SoZbDhM9+R/u77hP93gz/rajSA+K2kGyijPpORPWUXHUpTaleoj+92As0S9uPRP7Oi8IqMf0u+ro6A==}
+  /@fastify/deepmerge@2.0.0:
+    resolution: {integrity: sha512-fsaybTGDyQ5KpPsplQqb9yKdCf2x/pbNpMNk8Tvp3rRz7lVcupKysH4b2ELMN2P4Hak1+UqTYdTj/u4FNV2p0g==}
     dev: false
 
   /@fastify/error@3.4.1:
@@ -1524,11 +1524,11 @@ packages:
     resolution: {integrity: sha512-MWipKbbYiYI0UC7cl8m/i/IWTqfC8YXsqjzybjddLsFjStroQzsHXkc73JutMvBiXmOvapk+axIl79ig5t55Bw==}
     dev: false
 
-  /fastify-cli@6.2.1:
-    resolution: {integrity: sha512-i8CJZWD/5P0Vfx0HPLw7XMA7cyaYQDrKehWIUxmcueJsnd5KNsX6TTVn997dOiQvlmDU33di0AoBLDBf8zxBoA==}
+  /fastify-cli@6.3.0:
+    resolution: {integrity: sha512-FORXCwuBiNAArMMxp5hTthQCU9Xa7oO1wnCsGSgvuWC2k5ZarEEIXNm5RekcO9koZDQ0NACU6gGRF96Tf7ZI7Q==}
     hasBin: true
     dependencies:
-      '@fastify/deepmerge': 1.3.0
+      '@fastify/deepmerge': 2.0.0
       chalk: 4.1.2
       chokidar: 3.6.0
       close-with-grace: 1.3.0
@@ -1539,7 +1539,7 @@ packages:
       generify: 4.2.0
       help-me: 4.2.0
       is-docker: 2.2.1
-      pino-pretty: 11.2.1
+      pino-pretty: 11.2.2
       pkg-up: 3.1.0
       resolve-from: 5.0.0
       semver: 7.6.3
@@ -2549,8 +2549,8 @@ packages:
       split2: 4.2.0
     dev: false
 
-  /pino-pretty@11.2.1:
-    resolution: {integrity: sha512-O05NuD9tkRasFRWVaF/uHLOvoRDFD7tb5VMertr78rbsYFjYp48Vg3477EshVAF5eZaEw+OpDl/tu+B0R5o+7g==}
+  /pino-pretty@11.2.2:
+    resolution: {integrity: sha512-2FnyGir8nAJAqD3srROdrF1J5BIcMT4nwj7hHSc60El6Uxlym00UbCCd8pYIterstVBFlMyF1yFV8XdGIPbj4A==}
     hasBin: true
     dependencies:
       colorette: 2.0.20
