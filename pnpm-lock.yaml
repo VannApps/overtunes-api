@@ -37,7 +37,7 @@ dependencies:
     version: 4.5.1
   tebex_headless:
     specifier: ^1.6.2
-    version: 1.13.0
+    version: 1.14.0
 
 devDependencies:
   '@types/node':
@@ -3215,8 +3215,8 @@ packages:
       - react-dom
     dev: true
 
-  /tebex_headless@1.13.0:
-    resolution: {integrity: sha512-wHoiQQf/dprnuWNYYhyghEXHMHd4QDJ8dxP1Mg2/K1fDrjxiMJTqRwak4wYEh1EqyOD4If7GYpcbDWvfchImKw==}
+  /tebex_headless@1.14.0:
+    resolution: {integrity: sha512-XgPoDYaUd6ehdo5EticWS9v2AFS5Gb9XiHzfva2ab2DQzQZzeoP3M8A4LKJhht8q8fUPIx/nbi/cMMuvytQZUQ==}
     dependencies:
       axios: 1.7.4
     transitivePeerDependencies:
