@@ -1,4 +1,4 @@
-FROM ghcr.io/hazmi35/node:21-alpine as build-stage
+FROM ghcr.io/hazmi35/node:22-alpine as build-stage
 
 WORKDIR /tmp/build
 
@@ -15,7 +15,7 @@ RUN pnpm run build
 
 RUN pnpm prune --production
 
-FROM ghcr.io/hazmi35/node:21-alpine
+FROM ghcr.io/hazmi35/node:22-alpine
 
 RUN corepack enable && corepack prepare pnpm@latest
 
