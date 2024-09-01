@@ -22,7 +22,7 @@ dependencies:
     version: 5.19.0(prisma@5.19.0)
   axios:
     specifier: ^1.6.8
-    version: 1.7.6
+    version: 1.7.7
   cheerio:
     specifier: 1.0.0
     version: 1.0.0
@@ -1029,8 +1029,8 @@ packages:
       fastq: 1.17.1
     dev: false
 
-  /axios@1.7.6:
-    resolution: {integrity: sha512-Ekur6XDwhnJ5RgOCaxFnXyqlPALI3rVeukZMwOdfghW7/wGz784BYKiQq+QD8NPcr91KRo30KfHOchyijwWw7g==}
+  /axios@1.7.7:
+    resolution: {integrity: sha512-S4kL7XrjgBmvdGut0sN3yJxqYzrDOnivkBiN0OFs6hLiUam3UPvswUo0kqGyhqUZGEOytHyumEdXsAkgCOUf3Q==}
     dependencies:
       follow-redirects: 1.15.6
       form-data: 4.0.0
@@ -3220,7 +3220,7 @@ packages:
   /tebex_headless@1.14.0:
     resolution: {integrity: sha512-XgPoDYaUd6ehdo5EticWS9v2AFS5Gb9XiHzfva2ab2DQzQZzeoP3M8A4LKJhht8q8fUPIx/nbi/cMMuvytQZUQ==}
     dependencies:
-      axios: 1.7.6
+      axios: 1.7.7
     transitivePeerDependencies:
       - debug
     dev: false
