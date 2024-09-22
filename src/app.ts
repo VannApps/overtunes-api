@@ -5,21 +5,20 @@ import { fileURLToPath } from 'url'
 import cors from '@fastify/cors'
 import Middie from '@fastify/middie'
 import { bypassMiddleware } from './constant/bypassMiddleware.js';
-import { Client } from 'discord.js';
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-export const discordClient = new Client({
-  intents: [
-    "Guilds"
-  ],
-  rest: {
-    version: "10"
-  }
-})
+// export const discordClient = new Client({
+//   intents: [
+//     "Guilds"
+//   ],
+//   rest: {
+//     version: "10"
+//   }
+// })
 
-discordClient.login(process.env.DISCORD_TOKEN)
+// discordClient.login(process.env.DISCORD_TOKEN)
 
 export type AppOptions = {
   // Place your custom options for app below here.
