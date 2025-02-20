@@ -32,7 +32,7 @@
     "tebex_headless": "^1.6.2"
   },
   "devDependencies": {
-    "@types/node": "^20.4.4",
+    "@types/node": "^22.0.0",
     "@types/tap": "^15.0.5",
     "c8": "^10.0.0",
     "concurrently": "^8.2.2",
