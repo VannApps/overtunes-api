@@ -49,8 +49,8 @@ importers:
         specifier: ^20.4.4
         version: 20.17.53
       '@types/tap':
-        specifier: ^15.0.5
-        version: 15.0.12
+        specifier: ^18.0.0
+        version: 18.0.0(@types/node@20.17.53)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3)
       c8:
         specifier: ^10.0.0
         version: 10.1.3
@@ -469,8 +469,9 @@ packages:
   '@types/node@20.17.53':
     resolution: {integrity: sha512-VPqcZ080v262UpErqAmPLfA7FbTten4xRgdoDKNv6p7apP3GzfOgjxlshqre9m7BYB1alYSIEfnD+yiwE1byDQ==}
 
-  '@types/tap@15.0.12':
-    resolution: {integrity: sha512-QuVlxQEBOBASkirrwp0ciwO9stIzOdRMHyaYYsexeVSAYwR4sq+YIYaQbVaYXSXi8+yPf22ZZNieRCB8KAJrTA==}
+  '@types/tap@18.0.0':
+    resolution: {integrity: sha512-caqy4dfOj/mdGpMdjRIsJc0HDCMUeCLCxbf1mlfAbpDGzOOqd5yQ4hRMxiER+sR7Wx1y3gNEPqFw0ySp4uI/jQ==}
+    deprecated: This is a stub types definition. tap provides its own type definitions, so you do not need this installed.
 
   '@types/ws@8.18.1':
     resolution: {integrity: sha512-ThVF6DCVhA8kUGy+aazFQ4kXQ7E1Ty7A3ypFOe0IcJV8O/M511G99AW24irKrW56Wt44yG9+ij8FaqoBGkuBXg==}
@@ -2657,9 +2658,22 @@ snapshots:
     dependencies:
       undici-types: 6.19.8
 
-  '@types/tap@15.0.12':
+  '@types/tap@18.0.0(@types/node@20.17.53)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3)':
     dependencies:
-      '@types/node': 20.17.53
+      tap: 19.2.5(@types/node@20.17.53)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3)
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - '@types/react'
+      - bluebird
+      - bufferutil
+      - react
+      - react-devtools-core
+      - react-dom
+      - supports-color
+      - typescript
+      - utf-8-validate
 
   '@types/ws@8.18.1':
     dependencies:
