@@ -21,7 +21,7 @@
     "@fastify/autoload": "^5.0.0",
     "@fastify/cors": "^9.0.0",
     "@fastify/middie": "^8.3.0",
-    "@fastify/sensible": "^5.0.0",
+    "@fastify/sensible": "^6.0.0",
     "@prisma/client": "^5.13.0",
     "axios": "^1.6.8",
     "cheerio": "1.1.2",
