@@ -43,7 +43,7 @@ importers:
         version: 4.5.1
       tebex_headless:
         specifier: ^1.6.2
-        version: 1.15.1
+        version: 1.16.1
     devDependencies:
       '@types/node':
         specifier: ^20.4.4
@@ -1877,8 +1877,8 @@ packages:
     resolution: {integrity: sha512-JN5s7hgmg/Ya5HxZqCnywT+XiOGRFcJRgYhtMyt/1m+h0yWpWwApO7HIM8Bpwyno9hI151ljjp5eAPCHhIGbpQ==}
     engines: {node: 16 >=16.17.0 || 18 >= 18.6.0 || >=20}
 
-  tebex_headless@1.15.1:
-    resolution: {integrity: sha512-9GqHqIlyoSQd64sLTKA/smDJO9lrj7a4Fb8ZqZCgSGlYfLwmmZwc12KCa5kdpXtOGGnDn9b0M21mWltBAAx1YQ==}
+  tebex_headless@1.16.1:
+    resolution: {integrity: sha512-LWVfpUbsQLfGV9kFfBzLVvwfGF5G2HUekJnpodpiY5rq/FmSjh6nCRaFDL0kLuHvIgukKS1spU04AsDwclRTdw==}
 
   test-exclude@6.0.0:
     resolution: {integrity: sha512-cAGWPIyOHU6zlmg88jwm7VRyXnMN7iV68OGAbYDk/Mh/xC/pzVPlQtY6ngoIH/5/tciuhGfvESU8GrHrcxD56w==}
@@ -4214,12 +4214,7 @@ snapshots:
       - react
       - react-dom
 
-  tebex_headless@1.15.1:
-    dependencies:
-      axios: 1.18.1
-    transitivePeerDependencies:
-      - debug
-      - supports-color
+  tebex_headless@1.16.1: {}
 
   test-exclude@6.0.0:
     dependencies:
