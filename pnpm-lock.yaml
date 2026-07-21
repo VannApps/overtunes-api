@@ -25,7 +25,7 @@ importers:
         version: 5.22.0(prisma@5.22.0)
       axios:
         specifier: ^1.6.8
-        version: 1.18.1
+        version: 1.18.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
       cheerio:
         specifier: 1.2.0
         version: 1.2.0
@@ -58,14 +58,14 @@ importers:
         specifier: ^8.2.2
         version: 8.2.2
       fastify-tsconfig:
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: ^3.0.0
+        version: 3.0.0
       prisma:
         specifier: ^5.13.0
         version: 5.22.0
       tap:
         specifier: ^19.0.0
-        version: 19.2.5(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)
+        version: 19.2.5(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@8.1.1)(typescript@5.9.3)
       ts-node:
         specifier: ^10.4.0
         version: 10.9.2(@types/node@20.19.43)(typescript@5.9.3)
@@ -905,9 +905,9 @@ packages:
   fastify-plugin@4.5.1:
     resolution: {integrity: sha512-stRHYGeuqpEZTL1Ef0Ovr2ltazUT9g844X5z/zEBFLG8RYlpDiOCIG+ATvYEp+/zmc7sN29mcIMp8gvYplYPIQ==}
 
-  fastify-tsconfig@2.0.0:
-    resolution: {integrity: sha512-pvYwdtbZUJr/aTD7ZE0rGlvtYpx7IThHKVLBoqCKmT3FJpwm23XA2+PDmq8ZzfqqG4ajpyrHd5bkIixcIFjPhQ==}
-    engines: {node: '>=18.0.0'}
+  fastify-tsconfig@3.0.0:
+    resolution: {integrity: sha512-TxFM9+MUUM2Ub6chZbP5sPNUFaPWA86kHU0VRd4o9OP6PBP92cj9c4/IEsnLoVHcLgrgXf2GUXWUzkJAO9iKFQ==}
+    engines: {node: '>=20.0.0'}
 
   fastify@4.29.1:
     resolution: {integrity: sha512-m2kMNHIG92tSNWv+Z3UeTR9AWLLuo7KctC7mlFPtMEVrfjIhmQhkQnT9v15qA/BfVq3vvj134Y0jl9SBje3jXQ==}
@@ -2274,13 +2274,13 @@ snapshots:
 
   '@lukeed/ms@2.0.2': {}
 
-  '@npmcli/agent@2.2.2':
+  '@npmcli/agent@2.2.2(supports-color@8.1.1)':
     dependencies:
       agent-base: 7.1.4
-      http-proxy-agent: 7.0.2
-      https-proxy-agent: 7.0.6
+      http-proxy-agent: 7.0.2(supports-color@8.1.1)
+      https-proxy-agent: 7.0.6(supports-color@8.1.1)
       lru-cache: 10.4.3
-      socks-proxy-agent: 8.0.4
+      socks-proxy-agent: 8.0.4(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -2327,12 +2327,12 @@ snapshots:
 
   '@npmcli/redact@1.1.0': {}
 
-  '@npmcli/run-script@7.0.4':
+  '@npmcli/run-script@7.0.4(supports-color@8.1.1)':
     dependencies:
       '@npmcli/node-gyp': 3.0.0
       '@npmcli/package-json': 5.2.0
       '@npmcli/promise-spawn': 7.0.2
-      node-gyp: 10.2.0
+      node-gyp: 10.2.0(supports-color@8.1.1)
       which: 4.0.0
     transitivePeerDependencies:
       - bluebird
@@ -2383,21 +2383,21 @@ snapshots:
 
   '@sigstore/protobuf-specs@0.3.2': {}
 
-  '@sigstore/sign@2.3.2':
+  '@sigstore/sign@2.3.2(supports-color@8.1.1)':
     dependencies:
       '@sigstore/bundle': 2.3.2
       '@sigstore/core': 1.1.0
       '@sigstore/protobuf-specs': 0.3.2
-      make-fetch-happen: 13.0.1
+      make-fetch-happen: 13.0.1(supports-color@8.1.1)
       proc-log: 4.2.0
       promise-retry: 2.0.1
     transitivePeerDependencies:
       - supports-color
 
-  '@sigstore/tuf@2.3.4':
+  '@sigstore/tuf@2.3.4(supports-color@8.1.1)':
     dependencies:
       '@sigstore/protobuf-specs': 0.3.2
-      tuf-js: 2.2.1
+      tuf-js: 2.2.1(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -2539,7 +2539,7 @@ snapshots:
       - react-dom
       - utf-8-validate
 
-  '@tapjs/run@2.1.7(@tapjs/core@2.1.6(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@tapjs/run@2.1.7(@tapjs/core@2.1.6(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@8.1.1)':
     dependencies:
       '@tapjs/after': 1.1.31(@tapjs/core@2.1.6(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@tapjs/before': 2.0.8(@tapjs/core@2.1.6(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
@@ -2558,7 +2558,7 @@ snapshots:
       minipass: 7.1.2
       mkdirp: 3.0.1
       opener: 1.5.2
-      pacote: 17.0.7
+      pacote: 17.0.7(supports-color@8.1.1)
       resolve-import: 1.4.6
       rimraf: 5.0.10
       semver: 7.7.2
@@ -2716,9 +2716,9 @@ snapshots:
 
   acorn@8.12.1: {}
 
-  agent-base@6.0.2:
+  agent-base@6.0.2(supports-color@8.1.1):
     dependencies:
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -2776,11 +2776,11 @@ snapshots:
       '@fastify/error': 3.4.1
       fastq: 1.19.1
 
-  axios@1.18.1:
+  axios@1.18.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1):
     dependencies:
-      follow-redirects: 1.16.0
+      follow-redirects: 1.16.0(debug@4.4.3(supports-color@8.1.1))
       form-data: 4.0.6
-      https-proxy-agent: 5.0.1
+      https-proxy-agent: 5.0.1(supports-color@8.1.1)
       proxy-from-env: 2.1.0
     transitivePeerDependencies:
       - debug
@@ -2989,9 +2989,11 @@ snapshots:
 
   dateformat@4.6.3: {}
 
-  debug@4.4.3:
+  debug@4.4.3(supports-color@8.1.1):
     dependencies:
       ms: 2.1.3
+    optionalDependencies:
+      supports-color: 8.1.1
 
   delayed-stream@1.0.0: {}
 
@@ -3156,7 +3158,7 @@ snapshots:
 
   fastify-plugin@4.5.1: {}
 
-  fastify-tsconfig@2.0.0: {}
+  fastify-tsconfig@3.0.0: {}
 
   fastify@4.29.1:
     dependencies:
@@ -3200,7 +3202,9 @@ snapshots:
       locate-path: 6.0.0
       path-exists: 4.0.0
 
-  follow-redirects@1.16.0: {}
+  follow-redirects@1.16.0(debug@4.4.3(supports-color@8.1.1)):
+    optionalDependencies:
+      debug: 4.4.3(supports-color@8.1.1)
 
   foreground-child@3.3.0:
     dependencies:
@@ -3339,24 +3343,24 @@ snapshots:
       statuses: 2.0.1
       toidentifier: 1.0.1
 
-  http-proxy-agent@7.0.2:
+  http-proxy-agent@7.0.2(supports-color@8.1.1):
     dependencies:
       agent-base: 7.1.4
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
-  https-proxy-agent@5.0.1:
+  https-proxy-agent@5.0.1(supports-color@8.1.1):
     dependencies:
-      agent-base: 6.0.2
-      debug: 4.4.3
+      agent-base: 6.0.2(supports-color@8.1.1)
+      debug: 4.4.3(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
-  https-proxy-agent@7.0.6:
+  https-proxy-agent@7.0.6(supports-color@8.1.1):
     dependencies:
       agent-base: 7.1.4
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -3536,9 +3540,9 @@ snapshots:
 
   make-error@1.3.6: {}
 
-  make-fetch-happen@13.0.1:
+  make-fetch-happen@13.0.1(supports-color@8.1.1):
     dependencies:
-      '@npmcli/agent': 2.2.2
+      '@npmcli/agent': 2.2.2(supports-color@8.1.1)
       cacache: 18.0.4
       http-cache-semantics: 4.1.1
       is-lambda: 1.0.1
@@ -3637,13 +3641,13 @@ snapshots:
 
   negotiator@0.6.3: {}
 
-  node-gyp@10.2.0:
+  node-gyp@10.2.0(supports-color@8.1.1):
     dependencies:
       env-paths: 2.2.1
       exponential-backoff: 3.1.1
       glob: 10.4.5
       graceful-fs: 4.2.11
-      make-fetch-happen: 13.0.1
+      make-fetch-happen: 13.0.1(supports-color@8.1.1)
       nopt: 7.2.1
       proc-log: 4.2.0
       semver: 7.7.2
@@ -3692,10 +3696,10 @@ snapshots:
       npm-package-arg: 11.0.3
       semver: 7.7.2
 
-  npm-registry-fetch@16.2.1:
+  npm-registry-fetch@16.2.1(supports-color@8.1.1):
     dependencies:
       '@npmcli/redact': 1.1.0
-      make-fetch-happen: 13.0.1
+      make-fetch-happen: 13.0.1(supports-color@8.1.1)
       minipass: 7.1.2
       minipass-fetch: 3.0.5
       minipass-json-stream: 1.0.2
@@ -3749,24 +3753,24 @@ snapshots:
 
   package-json-from-dist@1.0.1: {}
 
-  pacote@17.0.7:
+  pacote@17.0.7(supports-color@8.1.1):
     dependencies:
       '@npmcli/git': 5.0.8
       '@npmcli/installed-package-contents': 2.1.0
       '@npmcli/promise-spawn': 7.0.2
-      '@npmcli/run-script': 7.0.4
+      '@npmcli/run-script': 7.0.4(supports-color@8.1.1)
       cacache: 18.0.4
       fs-minipass: 3.0.3
       minipass: 7.1.2
       npm-package-arg: 11.0.3
       npm-packlist: 8.0.2
       npm-pick-manifest: 9.1.0
-      npm-registry-fetch: 16.2.1
+      npm-registry-fetch: 16.2.1(supports-color@8.1.1)
       proc-log: 4.2.0
       promise-retry: 2.0.1
       read-package-json: 7.0.1
       read-package-json-fast: 3.0.2
-      sigstore: 2.3.1
+      sigstore: 2.3.1(supports-color@8.1.1)
       ssri: 10.0.6
       tar: 6.2.1
     transitivePeerDependencies:
@@ -4034,13 +4038,13 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  sigstore@2.3.1:
+  sigstore@2.3.1(supports-color@8.1.1):
     dependencies:
       '@sigstore/bundle': 2.3.2
       '@sigstore/core': 1.1.0
       '@sigstore/protobuf-specs': 0.3.2
-      '@sigstore/sign': 2.3.2
-      '@sigstore/tuf': 2.3.4
+      '@sigstore/sign': 2.3.2(supports-color@8.1.1)
+      '@sigstore/tuf': 2.3.4(supports-color@8.1.1)
       '@sigstore/verify': 1.2.1
     transitivePeerDependencies:
       - supports-color
@@ -4057,10 +4061,10 @@ snapshots:
 
   smart-buffer@4.2.0: {}
 
-  socks-proxy-agent@8.0.4:
+  socks-proxy-agent@8.0.4(supports-color@8.1.1):
     dependencies:
       agent-base: 7.1.4
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@8.1.1)
       socks: 2.8.3
     transitivePeerDependencies:
       - supports-color
@@ -4167,7 +4171,7 @@ snapshots:
       yaml: 2.5.1
       yaml-types: 0.3.0(yaml@2.5.1)
 
-  tap@19.2.5(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3):
+  tap@19.2.5(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@8.1.1)(typescript@5.9.3):
     dependencies:
       '@tapjs/after': 1.1.31(@tapjs/core@2.1.6(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@tapjs/after-each': 2.0.8(@tapjs/core@2.1.6(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
@@ -4181,7 +4185,7 @@ snapshots:
       '@tapjs/intercept': 2.0.8(@tapjs/core@2.1.6(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@tapjs/mock': 2.1.6(@tapjs/core@2.1.6(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@tapjs/node-serialize': 2.0.8(@tapjs/core@2.1.6(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
-      '@tapjs/run': 2.1.7(@tapjs/core@2.1.6(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@tapjs/run': 2.1.7(@tapjs/core@2.1.6(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@8.1.1)
       '@tapjs/snapshot': 2.0.8(@tapjs/core@2.1.6(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tapjs/spawn': 2.0.8(@tapjs/core@2.1.6(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@tapjs/stdin': 2.0.8(@tapjs/core@2.1.6(@types/node@20.19.43)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
@@ -4288,11 +4292,11 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  tuf-js@2.2.1:
+  tuf-js@2.2.1(supports-color@8.1.1):
     dependencies:
       '@tufjs/models': 2.0.1
-      debug: 4.4.3
-      make-fetch-happen: 13.0.1
+      debug: 4.4.3(supports-color@8.1.1)
+      make-fetch-happen: 13.0.1(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
