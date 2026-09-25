@@ -26,7 +26,7 @@
     "axios": "^1.6.8",
     "cheerio": "1.2.0",
     "discord.js": "^14.16.2",
-    "fastify": "^4.0.0",
+    "fastify": "^5.0.0",
     "fastify-cli": "^6.0.0",
     "fastify-plugin": "^4.0.0",
     "tebex_headless": "^1.6.2"
